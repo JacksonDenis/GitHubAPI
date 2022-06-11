@@ -3,6 +3,7 @@ import Layout from './componets/layout';
 import Profile from './componets/profile';
 import useGithub from './hooks/github-hooks';
 import Repositories from './componets/repositories';
+import NoSearch from './no-search';
 
 const App = () => {
   const {githubState} = useGithub ()
@@ -14,7 +15,7 @@ const App = () => {
             <Profile/>
             <Repositories/>
            </>}
-          </> : <div>Nenhum Usuário pesquisado</div>}
+          </> :( <NoSearch/>)}
 
            
         </Layout>
